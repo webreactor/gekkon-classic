@@ -1,3 +1,3 @@
 <?php
-$bin_open='<?php block('.parse_var($tag['arg']).'); ?>';
+$bin_open='<?php block('.$Gekkon->parse_var($tag['arg']).'); ?>';
 ?>

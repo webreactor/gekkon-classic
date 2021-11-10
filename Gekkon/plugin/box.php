@@ -6,8 +6,8 @@ if(strpos($tag['arg'],'=')!==false)
 }
 else
 {
-	$bin_open='<?php $this->display("box/".'.parse_var($tag['arg']).'."_open.tpl"); ?>';
-	$bin_close='<?php $this->display("box/".'.parse_var($tag['arg']).'."_close.tpl"); ?>';
+	$bin_open='<?php $this->display("box/".'.$Gekkon->parse_var($tag['arg']).'."_open.tpl"); ?>';
+	$bin_close='<?php $this->display("box/".'.$Gekkon->parse_var($tag['arg']).'."_close.tpl"); ?>';
 }
 
 

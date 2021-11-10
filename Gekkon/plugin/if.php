@@ -4,7 +4,7 @@ $ifstr='';
 foreach($t as $tt)
 {
 if(isset($tt[0]))
-if($tt[0]=='$'||$tt[0]=='@')$tt=parse_var($tt);
+if($tt[0]=='$'||$tt[0]=='@')$tt=$Gekkon->parse_var($tt);
 $ifstr.=' '.$tt;
 }
 

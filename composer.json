@@ -1,0 +1,14 @@
+{
+    "name": "webreactor/gekkon-classic",
+    "description": "Gekkon php templates",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Popov",
+            "email": "maxim@zalil.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Reactor\\Gekkon\\": "Gekkon/"}
+    }
+}

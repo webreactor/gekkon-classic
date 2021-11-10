@@ -29,4 +29,3 @@ $this->add_plugin('url',0,0,1);
 
 $this->add_plugin('switch',1,1,0);
 $this->add_plugin('case',0,0,0);
-?>
