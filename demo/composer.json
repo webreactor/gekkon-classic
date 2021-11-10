@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:webreactor/gekkon-classic.git"
+        }
+    ],
+    "require": {
+        "webreactor/gekkon-classic": "dev-master"
+    }
+}

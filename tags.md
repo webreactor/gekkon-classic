@@ -11,11 +11,38 @@
 Работа с откомпилированными версиями происходит прозрачно, вызывается только файл шаблона.
 
 Пример подключения -
+
 ```
-include 'Gekkon/Gekkon.php';
-//полный путь к директории где лежат папки Gekkon/ tpl/ tpl_bin/
-$Gekkon=new Gekkon($_SERVER['DOCUMENT_ROOT'].'/tpl/', $_SERVER['DOCUMENT_ROOT'].'tpl_bin/);
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:webreactor/gekkon-classic.git"
+        }
+    ],
+    "require": {
+        "webreactor/gekkon-classic": "dev-master"
+    }
+}
+
 ```
+
+```
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+require 'vendor/autoload.php';
+
+$Gekkon=new \Reactor\Gekkon\Gekkon(__dir__.'/tpl/', __dir__.'/tpl_bin/');
+
+$Gekkon->register('data', $_SERVER);
+$Gekkon->display('demo.tpl');
+
+```
+
+Дайте доступ на запись вебсерверу на папку tpl_bin
+
+`chmod a+x tpl_bin`
+
 
 ## Свойства класса
 ```
